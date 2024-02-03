@@ -3,7 +3,8 @@ module com.app.audiovisualizer {
     requires javafx.fxml;
 
     requires org.kordamp.bootstrapfx.core;
+    requires java.desktop;
 
-    opens com.app.audiovisualizer to javafx.fxml;
-    exports com.app.audiovisualizer;
+    opens com.app.audiovisualizer.ui to javafx.fxml;
+    exports com.app.audiovisualizer.ui;
 }
